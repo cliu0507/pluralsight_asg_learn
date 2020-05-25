@@ -22,11 +22,11 @@ Example: multiple t2.micro, all are identical in different availablity zones
 
 # Auto Scaling options
 1. manual
-2. dynamic
+2. dynamic -- in ASG tab, choose scaling policy 
 3. scheduled -- in ASG tab, choose scheduled action
 4. predictive(ML)
 
 # How to ssh and operate in instance?
 Answer: Use AWS systems manager
 1. first go to IAM and create roles so that we can delegate roles to instances => amazonec2roleforSSM
-2. Update launch template in advanced details (add IAM above)
+2. Update launch template in advanced details (add IAM above) so that it can be reached by AWS system manager
